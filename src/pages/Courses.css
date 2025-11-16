@@ -1,0 +1,177 @@
+/* src/components/Courses.css */
+
+/* Контейнер */
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+@media (min-width: 640px) {
+  .courses-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .courses-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+/* Загрузка */
+.loading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16rem;
+}
+
+.spinner {
+  width: 3rem;
+  height: 3rem;
+  border: 4px solid transparent;
+  border-bottom: 4px solid #facc15;
+  border-radius: 9999px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Заголовок */
+.courses-header {
+  margin-bottom: 3rem;
+}
+
+.courses-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.courses-subtitle {
+  font-size: 1.25rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+/* Фильтры */
+.filter-tabs {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.filter-btn {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #4b5563;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.filter-btn::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #facc15;
+  transition: width 0.3s ease;
+}
+
+.filter-btn:hover {
+  color: #1f2937;
+}
+
+.filter-btn.active {
+  color: #facc15;
+}
+
+.filter-btn.active::after {
+  width: 100%;
+}
+
+/* Сетка курсов */
+.courses-grid {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Нет курсов */
+.no-courses {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.no-courses-text {
+  color: #6b7280;
+  font-size: 1.125rem;
+}
+
+/* Прогресс */
+.progress-summary {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.progress-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.progress-bar-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar-bg {
+  flex: 1;
+  height: 1rem;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: #facc15;
+  border-radius: 9999px;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+.progress-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}

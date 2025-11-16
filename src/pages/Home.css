@@ -1,0 +1,152 @@
+/* Container */
+.home-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3rem 1rem; /* py-12 px-4 */
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin-bottom: 4rem; /* mb-16 */
+}
+
+.hero h1 {
+  font-size: 3rem; /* text-5xl */
+  font-weight: 700;
+  color: #1f2937; /* gray-900 */
+  margin-bottom: 1.5rem;
+}
+
+.hero h1 span {
+  display: block;
+  color: #facc15; /* yellow-400 */
+}
+
+.hero p {
+  font-size: 1.25rem; /* text-xl */
+  color: #4b5563; /* gray-600 */
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Buttons */
+.btn-yellow {
+  display: inline-block;
+  background-color: #facc15;
+  color: #1f2937;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.btn-yellow:hover {
+  background-color: #fbbf24;
+  transform: scale(1.05);
+}
+
+.btn-dark {
+  display: inline-block;
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: all 0.2s;
+}
+
+.btn-dark:hover {
+  background-color: #111827;
+  transform: scale(1.05);
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.feature-card div:first-child {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.feature-card p {
+  color: #4b5563;
+}
+
+/* Why Learn JS Section */
+.why-js {
+  background: linear-gradient(to right, #facc15, #f97316); /* yellow-400 to orange-400 */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.why-js h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.why-js .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.why-js h3 {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.why-js p {
+  color: #1f2937;
+}
+
+/* Call to Action */
+.call-to-action {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.call-to-action h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+
+.call-to-action p {
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
